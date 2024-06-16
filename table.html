@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Practice</title>
+    <link rel="stylesheet" href="./resources/css/table.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <p>EXIT</p>
+        <p>NEXT</p>
+        <p title="This is my first practice project!">EX.1 : 15/06/2024</p>
+    </nav>
+
+    <!-- Diagramme -->
+    <section id="boxmodel">
+        <header>
+            <h1>the <span class="title">BOX MODEL</span></h1>
+            <p>All elements on a web page are interpreted by the browser as "living" inside of a box.</p>
+        </header>
+        <figure>
+            <div id="margin">
+                <div id="border">
+                    <div id="padding">
+                        <div id="content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>margin</p>
+            <p>border</p>
+            <p>padding</p>
+            <p>content</p>
+        </figure>
+    </section>
+
+    <section id="table">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">CSS BOX MODEL PROPERTIES</th>
+                </tr>
+                <tr>
+                    <th>PROPERTY</th>
+                    <th>VALUE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>box-sizing:</td>
+                    <td>content-box; border-box;</td>
+                </tr>
+                <tr>
+                    <td>width: min, max-x:</td>
+                    <td>0px; 0%;</td>
+                </tr>
+                <tr>
+                    <td>height: min, max-x:</td>
+                    <td>0px; 0%; fit-content;</td>
+                </tr>
+                <tr>
+                    <td>padding: x-top, right, bottom, left:</td>
+                    <td>0px 0px 0px 0px;</td>
+                </tr>
+                <tr>
+                    <td>border: x-top, right, bottom, left:</td>
+                    <td>0px [style] [color];</td>
+                </tr>
+                <tr>
+                    <td>border-radius:</td>
+                    <td>0px; 0%;</td>
+                </tr>
+                <tr>
+                    <td>margin: x-top, right, bottom, left:</td>
+                    <td>0px 0px 0px 0px; auto;</td>
+                </tr>
+                <tr>
+                    <td>position:</td>
+                    <td>static; relative; absolute; fixed</td>
+                </tr>
+                <tr>
+                    <td>top, right, bottom, left:</td>
+                    <td>0px; 0%;</td>
+                </tr>
+                <tr>
+                    <td>visibility:</td>
+                    <td>hidden; visible</td>
+                </tr>
+                <tr>
+                    <td>overflow:</td>
+                    <td>hidden; visible; scroll;</td>
+                </tr>
+                <tr>
+                    <td>display:</td>
+                    <td>none; inline; block; inline-block; flex;</td>
+                </tr>
+                <tr>
+                    <td>z-index:</td>
+                    <td>0;</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
+
+<!-- C:\Users\Louis\Desktop\CODECADEMY\FullStack\Training\table.html -->

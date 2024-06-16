@@ -1,0 +1,268 @@
+:root {
+    --font-color:hsl(240, 100%, 45%);
+    --bg-color-1:hsl(260, 100%, 90%);
+    --bg-color-2:hsl(255, 100%, 80%);
+    --bg-color-3:hsl(240, 100%, 15%);
+    --bg-color-4:hsl(240, 75%, 60%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: var(--font-color);
+    background-color: var(--bg-color-1);
+    font-family: 'DM Mono', monospace;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    width: 97.5%;
+    border: 2px solid var(--font-color);
+    margin: 10px auto;
+    box-shadow: #ddcfff 5px 5px 0px -2px, 5px 5px var(--font-color);
+}
+
+nav p {
+    font-size: 1.5em;
+    padding: 0.25em;
+    font-weight: bold;
+}
+
+nav :last-child {
+    font-weight: normal;
+    margin-left: auto;
+}
+
+@media (width < 600px) {
+
+    nav {
+        width: 95%;
+    }
+
+    nav :last-child {
+        display: none;
+    }
+
+    nav :nth-child(2) {
+        margin-left: auto;
+    }
+
+}
+
+/* FIRST DIV */
+
+#boxmodel {
+    display: flex;
+    width: 97.5%;
+    height: fit-content;
+    margin: 30px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* HEADER */
+
+header {
+    flex: 0 0 500px;
+    height: fit-content;
+    padding: 1.25em;
+    margin: 25px 20px;
+    border: 2px solid var(--font-color);
+    box-shadow: var(--bg-color-1) 5px 5px 0px -2px, 5px 5px var(--font-color);
+}
+
+@media (width < 600px) {
+
+    header {
+        flex: 0 0 95%;
+    }
+
+}
+
+h1 {
+    font-size: 3em;
+    font-style: italic;   
+    text-shadow: 0px 0px 1px var(--font-color);
+}
+
+.title {
+    letter-spacing: 0.1em;
+    font-style: normal;
+}
+
+header p {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+@media (width < 600px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+}
+
+/* FIGURE */
+
+figure {
+    flex: 0 0 500px;
+    height: 500px;
+    margin: 25px 20px;
+}
+
+figure div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#margin {
+    width: 100%;
+    height: 100%;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: var(--font-color);
+}
+
+#border {
+    width: 75%;
+    height: 75%;
+    background-color: var(--bg-color-3);
+    color: white;
+}
+
+#padding {
+    width: 75%;
+    height: 75%;
+    background-color: var(--bg-color-2);
+}
+
+#content {
+    width: 50%;
+    height: 50%;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: var(--font-color);
+    background-color: var(--bg-color-2);
+}
+
+figure p {
+    color: black;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    width: 75px;
+    left: 42.5%;
+}
+
+figure p:first-of-type {
+    bottom: 480px;
+}
+
+figure p:nth-of-type(2) {
+    bottom: 445px;
+    color: white;
+}
+
+figure p:nth-of-type(3) {
+    bottom: 410px;
+}
+
+figure p:last-of-type {
+    bottom: 330px;
+}
+
+@media (width < 600px) {
+
+    figure p {
+        font-size: 0.8em;
+        left: 39.5%;
+    }
+
+    figure {
+        flex: 0 0 95%;
+        height: 350px;
+    }
+
+    figure p:first-of-type {
+        bottom: 335px;
+    }
+    
+    figure p:nth-of-type(2) {
+        bottom: 315px;
+        color: white;
+    }
+    
+    figure p:nth-of-type(3) {
+        bottom: 290px;
+    }
+    
+    figure p:last-of-type {
+        bottom: 240px;
+    }
+
+}
+
+/* TABLE */
+
+#table {
+    display: flex;
+    border-top: 2px solid var(--font-color);
+    padding: 1em 2em;
+    background: linear-gradient(135deg, hsl(240, 75%, 60%) 0%, hsl(240, 75%, 60%) 5%,transparent 5%, transparent 10%, hsl(240, 75%, 60%) 10%, hsl(240, 75%, 60%) 15%,transparent 15%,transparent 20%, hsl(240, 75%, 60%) 20%, hsl(240, 75%, 60%) 25%,transparent 25%,transparent 30%, hsl(240, 75%, 60%) 30%, hsl(240, 75%, 60%) 35%,transparent 35%,transparent 40%, hsl(240, 75%, 60%) 40%, hsl(240, 75%, 60%) 45%,transparent 45%,transparent 50%, hsl(240, 75%, 60%) 50%, hsl(240, 75%, 60%) 55%,transparent 55%,transparent 60%, hsl(240, 75%, 60%) 60%, hsl(240, 75%, 60%) 65%,transparent 65%,transparent 70%, hsl(240, 75%, 60%) 70%, hsl(240, 75%, 60%) 75%,transparent 70%,transparent 80%, hsl(240, 75%, 60%) 80%, hsl(240, 75%, 60%) 85%,transparent 85%,transparent 90%, hsl(240, 75%, 60%) 90%, hsl(240, 75%, 60%) 95%,transparent 90%);
+    background-size: 3em 3em;
+}
+
+table {
+    flex: 0 1 1000px;
+    border: 2px solid var(--font-color);
+    margin: 25px auto;
+    box-shadow: 3px 3px var(--font-color);
+    background-color: var(--bg-color-1);
+}
+
+th, td {
+    font-size: 0.85em;
+    padding: 0.75%;
+}
+
+@media (width < 730px) {
+    #table {
+        padding: 0.5em 1em;
+    }
+    th, td {
+        font-size: 0.65em;
+    }
+}
+
+th {
+    background-color: var(--font-color);
+    color: white;
+    text-align: left;
+    letter-spacing: 0.05em;
+}
+
+tr :first-child {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: hsl(260, 100%, 87.5%);
+}
+
+
+
+
